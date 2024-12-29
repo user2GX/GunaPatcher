@@ -17,53 +17,35 @@ Tested on:<br>
 ## 🎥 Preview
 
 [Click Here For Video](https://i.imgur.com/isAADUd.mp4)
-## 🌟 Stars
+## ❓ Information
 
-- None
+**THIS IS A FORKED REPOSITORY! All credits to `TheHellTower`'s repository.**\
+Since there was no provided documentation on the program, and no releases requiring you to
+manually build the program yourself, this repository with the required instructions will do
+it for you.
 
-## 📚 FAQ
+### Documentation
+Running the program requires one parameter.
+```
+Format:
+    - GunaPatcher.exe ( your patcher )
+    - Guna.UI2.dll ( your Guna DLL. )
+```
 
-<details>
-    <summary>
-        Will you update this long-term ?
-    </summary>
-    Not sure, depend on Guna I believe.
-</details>
-<details>
-    <summary>
-        Can I support the project ?
-    </summary>
-    Yes, you can either "sponsor" me with the button on my profile or donate by going there: https://github.com/TheHellTower#-support-my-work and read, if you want to donate through PayPal you can add me on Discord, click here to see my Discord: https://github.com/TheHellTower#-socials.
-</details>
-<details>
-    <summary>
-        Can I contribute to the project ?
-    </summary>
-    Yes, feel free to fork it, updated it as you wish as long as you don't break it and open a PR that will be reviewed !
-</details>
-<details>
-    <summary>
-        I need some help, do you give support ?
-    </summary>
-    No.
-</details>
-<details>
-    <summary>
-        Can you make me a custom patcher with everything I need ?
-    </summary>
-    Yes and no, I can't just do that and see a bunch of people in my DMs. However, You can send me an email at: "thehelltower@tuta.io" with your offer(price, etc..)
+The name of your Guna DLL must follow this line of code.
+```
+static string[] ModuleNames = new string[] { "Guna.UI2", "Guna.Charts.WinForms.dll" }, AssemblyNames = new string[] { "Guna.UI2", "Guna.Charts.WinForms" };
+```
+> [!TIP]
+> List of names that are readable by the program\
+>     __Guna.UI2.dll__\
+>     __Guna.Charts.WinForms.dll__
 
-    Note: Support for the first month included(more if the offer nice) and payment is sent only after preview.
-</details>
-<details>
-    <summary>
-        I have a question, can I contact you ?
-    </summary>
-    Yes you can either by opening a issue: https://github.com/TheHellTower/GunaPatcher/issues/new or send me an email at: "thehelltower@tuta.io" or contact me on one of my socials here: https://github.com/TheHellTower#-socials
-
-    Note: Only for questions no code support.
-</details>
-
+> [!IMPORTANT]
+> It's easier to have the Guna dll in the same folder as the program.
+> Example:
+> ```GunaPatcher.exe Guna.UI2.dll```
 ## 📢 Credits
 
 - [@SoheilMV](https://github.com/SoheilMV) for Enum Idea
+- [@TheHellTower](https://github.com/TheHellTower) for the repository
